@@ -6,10 +6,11 @@ export default {
   ],
   theme: {
     screens: {
-      'sm': '474px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
+      'sm': '360px',
+      'md': '475px',
+      'lg': '768px',
+      'xl': '1024px',
+      '2xl': '1280px',
     },
     extend: {},
   },
