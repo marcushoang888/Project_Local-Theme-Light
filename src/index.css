@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  .clip-triangle {
+    clip-path: polygon(100% 0, 0 0, 48% 45%);
+  }
+
 body {
   font-family: "DM Sans", sans-serif;
 }
