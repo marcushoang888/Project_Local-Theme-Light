@@ -1,3 +1,13 @@
 export default function NavBar() {
-    return
+    return (
+        <nav>
+            {/* Container */}
+            <div>
+                {/* Navbar container */}
+                <div>
+                   
+                </div>
+            </div>
+        </nav>
+    )
 }
