@@ -1,3 +1,13 @@
+import ContainerWrapper from "../function/ContainerWrapper";
+
 export default function Products_Freshfood() {
-    return
+  return (
+    <section>
+      <ContainerWrapper>
+        <div>
+            
+        </div>
+      </ContainerWrapper>
+    </section>
+  );
 }

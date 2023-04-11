@@ -4,7 +4,6 @@ import Banner_Kitchen from "./components/Banner_Kitchen/Banner_Kitchen";
 import Banner_Recipe from "./components/Banner_Recipe/Banner_Recipe";
 import Card from "./components/Card/Card";
 import Category from "./components/Category/Category";
-import Copyright from "./components/Copyright/Copyright";
 import Event from "./components/Event/Event";
 import Feature from "./components/Feature/Feature";
 import Footer from "./components/Footer/Footer";
@@ -47,7 +46,6 @@ export default function App() {
        <Subscibe></Subscibe>
        <Info></Info>
        <Footer></Footer>
-       <Copyright></Copyright>
       </div>
   )
 }

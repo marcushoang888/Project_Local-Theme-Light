@@ -23,7 +23,7 @@ export default function Products_Bestseller() {
           "//cdn.shopify.com/s/files/1/0572/4146/8989/files/Gluten-free_3dfe337a-e8e6-4535-a988-e237511cca0d.png?crop=center&height=32&v=1655374031&width=32",
         Eggs: "//cdn.shopify.com/s/files/1/0572/4146/8989/files/Eggs.png?crop=center&height=32&v=1655368519&width=32",
       },
-      isNew: true
+      isNew: true,
     },
 
     {
@@ -89,7 +89,7 @@ export default function Products_Bestseller() {
         Ecologic:
           "//cdn.shopify.com/s/files/1/0572/4146/8989/files/Eco_f7523587-bd10-46a8-9311-a125db925258.png?crop=center&height=32&v=1654250639&width=32",
       },
-      isNew: true
+      isNew: true,
     },
 
     {
@@ -146,9 +146,9 @@ export default function Products_Bestseller() {
   return (
     <section>
       <ContainerWrapper>
-      <Title title="Best Sellers" view="View all products"></Title>
+        <Title title="Best Sellers" view="View all products"></Title>
 
-        <div className="flex overflow-hidden   justify-between [&>div]:basis-full  [&>div]:sm:basis-[50%]  [&>div]:lg:basis-[33%] [&>div]:xl:basis-[25%]  [&>div]:shrink-0 [&>div]:cursor-grab [&>div]:overflow-hidden [&>div]:w-full [&>div]:px-[6.5px] [&>div]:xl:px-[10.4px] [&>div]:2xl:px-[13px] gap-[10px]">
+        <div className="flex overflow-hidden   justify-between [&>div]:basis-full  [&>div]:sm:basis-[50%]  [&>div]:lg:basis-1/3 [&>div]:xl:basis-[25%]  [&>div]:shrink-0 [&>div]:cursor-grab [&>div]:overflow-hidden [&>div]:w-full [&>div]:px-[6.5px] [&>div]:xl:px-[10.4px] [&>div]:2xl:px-[13px]">
           {/* ITEM */}
           {items.map((item) => (
             <Items
@@ -157,7 +157,7 @@ export default function Products_Bestseller() {
               discount={item.discount}
               name={item.name}
               soldOut={item.soldOut}
-              isNew = {item.isNew}
+              isNew={item.isNew}
               key={item.id}
             >
               <Star full={item.stars}></Star>

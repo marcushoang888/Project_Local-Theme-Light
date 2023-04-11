@@ -10,7 +10,7 @@ export default function Items({
   discount,
   name,
   soldOut = false,
-  isNew=false,
+  isNew = false,
   children,
 }) {
   const sold = (
@@ -43,19 +43,21 @@ export default function Items({
         NEW
       </p>
     </div>
-  )
+  );
   return (
-    <BorderItem>
-      {soldOut && sold}
-      {percent && percentage}
-      {isNew && newBlock}
-      {}
-      <ImageItem imgUrl={imgUrl} name={name}></ImageItem>
-      <ContentContainer>
-        <Price number={price} discount={discount}></Price>
-        <Name url="" text={name}></Name>
-        {children}
-      </ContentContainer>
-    </BorderItem>
+    <div>
+      <BorderItem>
+        {soldOut && sold}
+        {percent && percentage}
+        {isNew && newBlock}
+        {}
+        <ImageItem imgUrl={imgUrl} name={name}></ImageItem>
+        <ContentContainer>
+          <Price number={price} discount={discount}></Price>
+          <Name url="" text={name}></Name>
+          {children}
+        </ContentContainer>
+      </BorderItem>
+    </div>
   );
 }
