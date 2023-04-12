@@ -6,7 +6,7 @@ export default function HeaderButton() {
         href=""
       >
         <svg
-          className=""
+          className="hover:stroke-white"
           width={22}
           height={42}
           viewBox="0 0 22 22"
