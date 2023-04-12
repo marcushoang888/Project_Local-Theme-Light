@@ -1,6 +1,15 @@
+import { useState } from "react";
 import HeaderButton from "./HeaderButton";
 
 export default function Header() {
+
+  const [open, setOpen] = useState(false)
+
+  function handleShowOverlay() {
+    setOpen(!open)
+  }
+  
+
   return (
     <header className="border-b-[1px] border-solid border-gray">
       {/* Container */}
@@ -81,7 +90,7 @@ export default function Header() {
 
           {/* Header search box */}
           <div className="xl:flex xl:justify-between xl:items-center w-full">
-            <div className="relative sm:px-[15px] md:px-5 lg:px-[30px] sm:pb-[15px] lg:pb-5 xl:pb-0 xl:items-center w-full">
+            <div className="z-0 relative sm:px-[15px] md:px-5 lg:px-[30px] sm:pb-[15px] lg:pb-5 xl:pb-0 xl:items-center w-full">
             <span className="absolute justify-start translate-y-1/2 translate-x-1/2">
                 <svg
                   width={22}
@@ -106,12 +115,13 @@ export default function Header() {
                 </svg>
               </span>
               <input
-                className="sm:py-2 sm:pr-6 sm:pl-[43px] border-[1px] border-solid border-[#cccc] rounded-full w-full hover:border-[#1d1d1d] hover:placeholder-[#1d1d1d] active:shadow-md-[#1d1d1d] active:shadw-blur-sm"
+                className="sm:py-2 sm:pr-6 sm:pl-[43px] border-[1px] border-solid border-[#cccc] rounded-full w-full hover:border-[#1d1d1d] hover:placeholder-[#1d1d1d] active:shadow-md-[#1d1d1d]"
                 type="text"
                 placeholder="Search for"
+                onClick={handleShowOverlay}
               />
                {/* overlay */}
-              <div className="hidden fixed left-0 top-0 bottom-0 w-screen h-screen bg-[#1d1d1d] opacity-30"></div>
+              {open? <div onClick={handleShowOverlay} className="z-[-1] fixed left-0 top-0 bottom-0 w-screen h-screen bg-[#1d1d1d] opacity-30"></div> : ""}
             </div>
 
             <HeaderButton />
