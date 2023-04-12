@@ -3,7 +3,7 @@ import NavbarLink from "./NavbarLink";
 
 export default function NavbarLinks() {
   return (
-    <ul className="sm:hidden md:hidden lg:hidden xl:flex xl:justify-between xl:text-base xl:font-medium ">
+    <ul className="hidden lg:hidden xl:flex xl:justify-between xl:text-base xl:font-medium ">
       <li className="xl:py-[15px] xl:px-5 xl:flex items-center">
         <a className="font-inherit " href="">
           Categories
