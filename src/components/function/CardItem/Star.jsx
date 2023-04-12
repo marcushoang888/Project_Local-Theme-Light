@@ -5,7 +5,9 @@ export default function Star({ full }) {
     star[i] = <i key={i} className="fa-regular fa-star"></i>;
   }
 
+  if (!full) return null
   return (
+    
     <div className="mb-[14.875px]">
       {star.map((item, index) => {
         if (count > 0) {

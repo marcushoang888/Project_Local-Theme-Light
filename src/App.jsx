@@ -16,7 +16,7 @@ import Products_Hotdeals from "./components/Products_Hotdeals/Products_Hotdeals"
 import Products_HotdealsMore from "./components/Products_HotdealsMore/Products_HotdealsMore";
 import Products_Lifestyle from "./components/Products_Lifestyle/Products_Lifestyle";
 import Products_Shop from "./components/Products_Shop/Products_Shop";
-import Products_Freshfood from "./components/Products_freshfood/Products_freshfood";
+import Products_Freshfood from "./components/Products_Freshfood/Products_Freshfood";
 import Subscibe from "./components/Subscribe/Subscribe";
 import Testimonial from "./components/Testimonial/Testimonial";
 

@@ -1,9 +1,10 @@
 import ContainerWrapper from "../function/ContainerWrapper";
 import Items from "../function/CardItem/Items";
 import Title from "../function/Title";
+import ItemsContainer from "../function/CardItem/ItemsContainer";
 
 export default function Products_HotdealsMore() {
-  const info = [
+  const items = [
     {
       id: 1,
       imgUrl:
@@ -75,17 +76,8 @@ export default function Products_HotdealsMore() {
     <section>
       <ContainerWrapper>
         <Title title="Hot Deals" view="View All Products"></Title>
-        <div className="grid grid-cols-1 gap-[13px]  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-[20.8px] 2xl:gap-[26px]">
-          {info.map((item) => (
-            <Items
-              key={item.id}
-              imgUrl={item.imgUrl}
-              price={item.price}
-              discount={item.discount}
-              name={item.name}
-              soldOut={item.soldOut}
-            ></Items>
-          ))}
+        <div className="[&>div]:grid [&>div]:grid-cols-1 [&>div]:gap-[13px]  [&>div]:sm:grid-cols-2 [&>div]:lg:grid-cols-3 [&>div]:xl:grid-cols-4 [&>div]:xl:gap-[20.8px] [&>div]:2xl:gap-[26px]">
+          <ItemsContainer items={items} />
         </div>
       </ContainerWrapper>
     </section>
