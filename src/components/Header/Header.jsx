@@ -22,10 +22,10 @@ export default function Header() {
         <div className="sm:flex sm:flex-col xl:py-5 xl:px-10 xl:flex-row xl:items-center">
           <div className="sm:px-[15px] sm:py-[15px] md:px-5  lg:px-[30px] lg:py-5 xl:p-0  sm:flex sm:justify-between sm:items-center ">
             {/* Header menu */}
-            {/* <Headermenu /> */}
+            <Headermenu />
 
             {/* Header Logo */}
-            {/* <HeaderLogo /> */}
+            <HeaderLogo />
 
             {/* Header shopping cart */}
             <HeaderShoppingCart />
@@ -78,7 +78,7 @@ export default function Header() {
           </div>
         </div>
 
-        <MenuLayout />
+        {/* <MenuLayout /> */}
       </div>
     </header>
   );
