@@ -3,6 +3,9 @@ import HeaderButton from "./HeaderButton";
 import Headermenu from "./HeaderMenu";
 import HeaderLogo from "./HeaderLogo";
 import HeaderShoppingCart from "./HeaderShoppingCart";
+import MenuLayout from "./MenuLayout";
+import Categorie from "./Categorie";
+import Overlay from "./Overlay";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -14,15 +17,15 @@ export default function Header() {
   return (
     <header className="border-b-[1px] border-solid border-gray">
       {/* Container */}
-      <div className="max-w-screen-2xl mx-auto ">
+      <div className="max-w-screen-2xl mx-auto sm:relative">
         {/* Header container */}
         <div className="sm:flex sm:flex-col xl:py-5 xl:px-10 xl:flex-row xl:items-center">
           <div className="sm:px-[15px] sm:py-[15px] md:px-5  lg:px-[30px] lg:py-5 xl:p-0  sm:flex sm:justify-between sm:items-center ">
             {/* Header menu */}
-            <Headermenu />
+            {/* <Headermenu /> */}
 
             {/* Header Logo */}
-            <HeaderLogo />
+            {/* <HeaderLogo /> */}
 
             {/* Header shopping cart */}
             <HeaderShoppingCart />
@@ -74,6 +77,8 @@ export default function Header() {
             <HeaderButton />
           </div>
         </div>
+
+        <MenuLayout />
       </div>
     </header>
   );
